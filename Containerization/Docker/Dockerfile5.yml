@@ -1,6 +1,6 @@
 FROM tomcat:8.5.37-jre8
 MAINTAINER ravi@gmail.com
 RUN apt-get update
-ADD https://s3-ap-southeast-1.amazonaws.com/ravidevops/raviLogin.war /usr/local/tomcat/webapps/
+ADD https://ravidevops.s3-ap-southeast-1.amazonaws.com/raviLogin.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
